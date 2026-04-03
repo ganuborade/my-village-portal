@@ -33,15 +33,13 @@ body {
 }
 
 /* ===== MOVING TEXT ONLY ===== */
-/* .announcement-text {
+.announcement-text {
+    position: relative;
     display: inline-block;
     white-space: nowrap;
-    padding-left: 100%;
-    color: #000;   /* BLACK TEXT ✅ 
+    color: #000;   /* BLACK TEXT ✅ */
     font-weight: 600;
-
-    animation: scrollText 20s linear infinite;
-}*/
+}
 
 /* ===== ANIMATION ===== */
 @keyframes scrollText {
@@ -129,6 +127,10 @@ footer {
 
     .career-box ul li {
         font-size: 14px;
+    }
+
+    .announcement-text {
+        font-size: 14px; /* Smaller font on mobile */
     }
 }
 
