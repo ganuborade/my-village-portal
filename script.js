@@ -25,30 +25,31 @@ function toggleTheme() {
         });
     });
 
-const announcement = document.querySelector('.announcement');
+// const announcement = document.querySelector('.announcement');
 
-setInterval(() => {
-    if (announcement.style.display === "none") {
-        announcement.style.display = "block";
-    } else {
-        announcement.style.display = "none";
-    }
-}, 3000); // 3 seconds
+// setInterval(() => {
+//     if (announcement.style.display === "none") {
+//         announcement.style.display = "block";
+//     } else {
+//         announcement.style.display = "none";
+//     }
+// }, 3000); // 3 seconds
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const announcement = document.querySelector('.announcement');
+    const announcementText = document.querySelector('.announcement-text');
 
     let pos = window.innerWidth;
+    const speed = window.innerWidth < 768 ? 0.5 : 1; // Slower on mobile
 
     setInterval(() => {
-        pos -= 1;
+        pos -= speed;
 
-        if (pos < -announcement.offsetWidth) {
+        if (pos < -announcementText.offsetWidth) {
             pos = window.innerWidth;
         }
 
-        announcement.style.left = pos + "px";
+        announcementText.style.left = pos + "px";
     }, 10);
 
 });
