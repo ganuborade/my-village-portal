@@ -23,13 +23,13 @@ body {
 /* ===== FIXED BACKGROUND ===== */
 .announcement {
     position: fixed;
-    top: 56px;
+    top: 80px;
     left: 0;
     width: 100%;
     z-index: 2000;
     /* background: var(--accent);  */
     padding: 8px 0;
-    overflow: hidden;
+   
 }
 
 /* ===== MOVING TEXT ONLY ===== */
@@ -37,8 +37,9 @@ body {
     position: relative;
     display: inline-block;
     white-space: nowrap;
-    color: #000;   /* BLACK TEXT ✅ */
+    color: #cf1313;   /* BLACK TEXT ✅ */
     font-weight: 600;
+    background-color: white;
 }
 
 /* ===== ANIMATION ===== */
